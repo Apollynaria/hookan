@@ -2,13 +2,12 @@
     <header style="border-bottom: 1px solid #5c005c">
         <nav :class="{ 'justify-center': mobile }">
             <div class="branding">
-                <img src="../assets/logo.jpg" alt="logo">
+                <img @click="router.push('/')" src="../assets/logo.jpg" alt="logo">
             </div>
             <ul v-show="!mobile" class="navigation">
-                <li><router-link class="link" to="/">Главная</router-link></li>
-                <li><router-link class="link" to="/interior">Интерьер</router-link></li>
-                <li><router-link class="link" to="/rules">Правила посещения</router-link></li>
-                <li><router-link class="link" to="/contacts">Контакты</router-link></li>
+                <template v-for="item in navigationMenuList">
+                    <li><router-link class="link" :to="item.link">{{ item.text }}</router-link></li>
+                </template>
             </ul>
             <div class="icon">
                 <q-icon @click="toggleMobileNav" name="menu" :class="{ 'icon-active': mobileNav }" />
@@ -23,34 +22,15 @@
                 <ul v-show="mobileNav" class="dropdown-nav">
                     <div class="flex justify-between q-mx-sm q-mt-sm icon-dropdown">
                         <div class="branding">
-                            <img src="../assets/logo.jpg" alt="logo">
+                            <img @click="router.push('/')" src="../assets/logo.jpg" alt="logo">
                         </div>
                         <q-icon @click="toggleMobileNav" name="close" size="sm" :class="{ 'icon-active': mobileNav }" />
                     </div>
-                    <li>
-                        <div @click="navigateToMenu('hookan')">Кальяны</div>
-                    </li>
-                    <li>
-                        <div @click="navigateToMenu('promo')">Акции</div>
-                    </li>
-                    <li>
-                        <div @click="navigateToMenu('bar')">Бар</div>
-                    </li>
-                    <li>
-                        <div @click="navigateToMenu('coctails')">Коктейли</div>
-                    </li>
-                    <li>
-                        <div @click="navigateToMenu('tea')">Авторский чай</div>
-                    </li>
-                    <li>
-                        <div @click="navigateToMenu('tea_ceremonies')">Чайные церемонии</div>
-                    </li>
-                    <li>
-                        <div @click="navigateToMenu('designer_lemonades')">Авторские лимонады</div>
-                    </li>
-                    <li>
-                        <div @click="navigateToMenu('snacks')">Закуски</div>
-                    </li>
+                    <template v-for="item in menuList">
+                        <li>
+                            <div @click="navigateToMenu(item.id)">{{ item.text }}</div>
+                        </li>
+                    </template>
                     <div class="q-ma-md">
                         <hr class="hr-separator">
                     </div>
@@ -94,6 +74,59 @@ const mobile = ref(false);
 const mobileNav = ref(false);
 const windowWidth = ref(0);
 
+const navigationMenuList = [
+    {
+        link: '/',
+        text: 'Главная',
+    },
+    {
+        link: '/interior',
+        text: 'Интерьер',
+    },
+    {
+        link: '/rules',
+        text: 'Правила посещения',
+    },
+    {
+        link: '/contacts',
+        text: 'Контакты',
+    },
+]
+
+const menuList = [
+    {
+        id: 'hookan',
+        text: 'Кальяны',
+    },
+    {
+        id: 'promo',
+        text: 'Акции',
+    },
+    {
+        id: 'bar',
+        text: 'Бар',
+    },
+    {
+        id: 'coctails',
+        text: 'Коктейли',
+    },
+    {
+        id: 'tea',
+        text: 'Авторский чай',
+    },
+    {
+        id: 'tea_ceremonies',
+        text: 'Чайные церемонии',
+    },
+    {
+        id: 'designer_lemonades',
+        text: 'Авторские лимонады',
+    },
+    {
+        id: 'snacks',
+        text: 'Закуски',
+    },
+]
 const navigateToMenu = (menu: string) => {
     router.push({ name: 'Home', query: { menu } });
 };
@@ -179,6 +212,7 @@ header {
             img {
                 width: 110px;
                 transition: .6s ease all;
+                cursor: pointer;
             }
         }
 

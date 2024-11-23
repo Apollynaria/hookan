@@ -24,10 +24,6 @@ import Contacts from './components/UI/Contacts.vue';
     font-family: 'Impact';
     src: url('./fonts/Impact.ttf') format('truetype');
   }
-  @font-face {
-    font-family: 'CourierNew';
-    src: url('./fonts/CourierNew.ttf') format('truetype');
-  }
 
 * {
   padding: 0;
