@@ -1,8 +1,10 @@
 <template>
-  <div style="height: 60px;" class="bg-black">
+  <div style="height: 60px;" class="">
     <div class="text-center title h-full">
       <div style="height: 25px;" />
-      <p class="subtitle fancy"><span :class="`text-${color_text}`">{{ title }}</span></p>
+      <div class="underline">
+        <p class="subtitle fancy"><span :class="`text-${color_text}`">{{ title }}</span></p>
+      </div>
     </div>
   </div>
 </template>
@@ -26,6 +28,11 @@ const props = defineProps({
 .title {
   font-family: 'Courier New', Courier, monospace;
   font-size: 22px;
+  position: relative;
+}
+
+.underline {
+  position: relative;
 }
 
 .fancy {
@@ -36,26 +43,25 @@ const props = defineProps({
 .fancy span {
   display: inline-block;
   position: relative;
+  z-index: 1;
 }
 
-.fancy span:before,
-.fancy span:after {
+.underline::before,
+.underline::after {
   content: "";
   position: absolute;
-  height: 9px;
-  border-bottom: 3px solid #5c005c;
-  border-top: 3px solid #5c005c;
-  top: 0;
-  width: 25px;
+  height: 1px;
+  background-color: #5c005c;
+  width: 50vw;
+  top: 50%;
+  left: 0;
+  z-index: 0;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
-.fancy span:before {
-  right: 100%;
-  margin-right: 10px;
-}
-
-.fancy span:after {
-  left: 100%;
-  margin-left: 10px;
+.underline::after {
+  left: auto;
+  right: 0;
 }
 </style>

@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../components/Home.vue';
 import Interior from '@/components/Interior.vue';
 import ContactsPage from '@/components/ContactsPage.vue';
-import Rules from '@/components/Rules.vue';
+import RulesPage from '@/components/RulesPage.vue';
 import LoyaltyProgramPage from '@/components/LoyaltyProgramPage.vue';
 
 const router = createRouter({
@@ -23,7 +23,7 @@ const router = createRouter({
     },
     {
       path: '/rules',
-      component: Rules
+      component: RulesPage
     },
     {
       path: '/loyaltyProgram',

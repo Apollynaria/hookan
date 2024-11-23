@@ -20,27 +20,11 @@
   <div>
     <div id="hookan">
       <HeaderText title="КАЛЬЯНЫ" />
-      <div class="text-center text-white bg-black q-mb-lg">
+      <div class="text-center text-white  q-mb-lg">
         <q-img class="q-mt-lg" src="https://img.freepik.com/premium-photo/hookah-with-fume-dark_392895-21378.jpg"
           style="height: 300px; width: 278px;"></q-img>
         <div class="title text-h5 q-mt-lg">
           НАЗВАНИЕ
-        </div>
-        <div class="description q-mx-lg q-mt-sm">
-          По мотивам всемирно известного коктейля Cosmopolitan, мы создали новую версию этого напитка с добавлением
-          грантового сока, которая подчеркнет все вкусовые тонкости.
-        </div>
-        <div class="price text-h5 q-mt-md">
-          2200 ₽
-        </div>
-      </div>
-
-      <div class="text-center text-white bg-black q-mb-lg">
-        <!-- <q-img class="q-mt-lg"
-          src="https://media.istockphoto.com/id/1225550244/photo/traditional-oriental-hookah.jpg?s=612x612&w=0&k=20&c=8N43Nny2de35mK6Kce3Ix7hNBTQ2d8IRpmRmxyoONNs="
-          style="height: 300px; width: 278px;"></q-img> -->
-        <div class="title text-h5 q-mt-lg">
-          АБВЫВЫФВФЫ
         </div>
         <div class="description q-mx-lg q-mt-sm">
           По мотивам всемирно известного коктейля Cosmopolitan, мы создали новую версию этого напитка с добавлением
@@ -73,7 +57,9 @@
       <HeaderText title="ЗАКУСКИ" />
     </div>
   </div>
+  <Rules class="q-mt-md" />
   <LoyaltyProgram />
+  
 </template>
 
 <script setup lang="ts">
@@ -82,6 +68,7 @@ import { QCarousel, QCarouselSlide, QImg } from 'quasar';
 import image from '@/assets/home.jpg';
 import HeaderText from './UI/HeaderText.vue';
 import LoyaltyProgram from './UI/LoyaltyProgram.vue';
+import Rules from './UI/Rules.vue';
 import { useRoute } from 'vue-router';
 
 const slide = ref(1);

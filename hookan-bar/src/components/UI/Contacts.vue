@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="contacts">
-            <div class="text-center bg-black">
+            <div class="text-center">
                 <div>
                     <br>
                     г. Иркутск, Красноярская ул., 33
