@@ -5,7 +5,6 @@
         <div class="absolute-full flex flex-center items-center bg-color">
           <Transition name="fade-in">
             <div class="q-ma-md text-center" v-if="anim">
-              <div class="text-h3 text-white logo-text">Gorgona Lounge<br><br></div>
               <div class="text-h6 text-white subtitle-text">Уютное место для отдыха и развлечений, где каждый найдет
                 занятие по душе.<br><br></div>
               <div class="text-h6 text-white subtitle-text">В атмосфере комфорта и расслабления вы можете наслаждаться
@@ -44,21 +43,19 @@
     <div id="coctails">
       <HeaderText title="КОКТЕЙЛИ" />
     </div>
+    <div id="designer_lemonades">
+      <HeaderText title="АВТОРСКИЕ ЛИМОНАДЫ" />
+    </div>
     <div id="tea">
       <HeaderText title="АВТОРСКИЙ ЧАЙ" />
     </div>
     <div id="tea_ceremonies">
       <HeaderText title="ЧАЙНЫЕ ЦЕРЕМОНИИ" />
     </div>
-    <div id="designer_lemonades">
-      <HeaderText title="АВТОРСКИЕ ЛИМОНАДЫ" />
-    </div>
     <div id="snacks">
       <HeaderText title="ЗАКУСКИ" />
     </div>
   </div>
-  <Rules class="q-mt-md" />
-  <LoyaltyProgram />
   
 </template>
 
@@ -139,7 +136,6 @@ watch(() => route.query.menu, (newMenu) => {
 }
 
 .subtitle-text {
-  font-family: 'Courier New', Courier, monospace;
   line-height: 1.8rem;
 }
 

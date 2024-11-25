@@ -12,7 +12,7 @@
                     </a>
                 </div>
                 <div class="q-mt-sm">
-                    ПН-ВС 18:00 - 02:00
+                    ПН-ВС 15:00 - 02:00
                 </div>
                 <div class="col items-center q-mt-sm q-gutter-sm">
                     <!-- telegram -->
@@ -27,7 +27,7 @@
                         </q-btn>
                     </a>
                     <!-- whatsapp -->
-                    <a href="https://vk.com/gorgonairkutsk">
+                    <a href="https://wa.me/89016662190">
                         <q-btn round>
                             <svg width="25" height="25" viewBox="0 0 20 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -57,7 +57,7 @@
                         href="https://yandex.ru/maps/63/irkutsk/category/bar_pub/184106384/?utm_medium=mapframe&utm_source=maps"
                         style="color:#eee;font-size:12px;position:absolute;top:28px;">Бар, паб в Иркутске</a><iframe
                         src="https://yandex.ru/map-widget/v1/?ll=104.329889%2C52.279209&mode=search&oid=12782634038&ol=biz&z=13.95"
-                        width="100%" height="400" frameborder="1" allowfullscreen="true"
+                        width="100%" height="250" frameborder="1" allowfullscreen="true"
                         style="position:relative;"></iframe>
                 </div>
             </div>

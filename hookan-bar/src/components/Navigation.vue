@@ -2,11 +2,11 @@
     <header style="border-bottom: 1px solid #5c005c">
         <nav :class="{ 'justify-center': mobile }">
             <div class="branding">
-                <img @click="router.push('/')" src="../assets/logo.jpg" alt="logo">
+                 GORGONA LOUNGE
             </div>
             <ul v-show="!mobile" class="navigation">
                 <template v-for="item in navigationMenuList">
-                    <li><router-link class="link" :to="item.link">{{ item.text }}</router-link></li>
+                    <li style="margin-left: 2px !important;"><router-link class="link" :to="item.link">{{ item.text }}</router-link></li>
                 </template>
             </ul>
             <div class="icon">
@@ -46,23 +46,23 @@
             </transition>
         </nav>
     </header>
-    <header style="background-color: rgba(0, 0, 0, 0); z-index: 5; margin-top: 120px;">
+    <header style="background-color: rgba(0, 0, 0, 0); z-index: 5; margin-top: 50px;">
         <nav v-show="mobile" class="nav-mini-mobile">
             <ul class="navigation">
                 <li>
                     <div @click="navigateToMenu('hookan')">Кальян</div>
                 </li>
                 <li>
-                    <div @click="navigateToMenu('tea')">Чай</div>
+                    <div @click="navigateToMenu('tea')">Чайные церемонии</div>
                 </li>
                 <li>
-                    <div @click="navigateToMenu('bar')">Бар</div>
+                    <div @click="navigateToMenu('bar')">Коктейли</div>
                 </li>
             </ul>
         </nav>
     </header>
-    <div v-if="!mobile" style="height: 120px;"></div>
-    <div v-if="mobile" style="height: 160px;"></div>
+    <div v-if="!mobile" style="height: 80px;"></div>
+    <div v-if="mobile" style="height: 100px;"></div>
 </template>
 
 <script setup lang="ts">
@@ -111,16 +111,16 @@ const menuList = [
         text: 'Коктейли',
     },
     {
+        id: 'designer_lemonades',
+        text: 'Авторские лимонады',
+    },
+    {
         id: 'tea',
         text: 'Авторский чай',
     },
     {
         id: 'tea_ceremonies',
         text: 'Чайные церемонии',
-    },
-    {
-        id: 'designer_lemonades',
-        text: 'Авторские лимонады',
     },
     {
         id: 'snacks',
@@ -176,10 +176,10 @@ header {
         position: relative;
         display: flex;
         flex-direction: row;
-        padding: 0 50px 0 50px;
+        // padding: 0 50px 0 50px;
         transition: .5s ease all;
         width: 90%;
-        height: 120px;
+        height: 50px;
         margin: 0 auto;
 
         @media (min-width: 1140px) {
@@ -192,12 +192,12 @@ header {
             color: #ffff;
             list-style: none;
             text-decoration: none;
+            white-space: nowrap;
         }
 
         li {
             text-transform: uppercase;
             padding: 16px;
-            margin-left: 16px;
             cursor: pointer;
 
             &:hover {
@@ -208,7 +208,7 @@ header {
         .branding {
             display: flex;
             align-items: center;
-
+            font-size: 25px;
             img {
                 width: 110px;
                 transition: .6s ease all;

@@ -26,7 +26,6 @@ const props = defineProps({
 
 <style lang="scss" scoped>
 .title {
-  font-family: 'Courier New', Courier, monospace;
   font-size: 22px;
   position: relative;
 }

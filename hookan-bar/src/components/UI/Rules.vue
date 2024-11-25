@@ -1,19 +1,21 @@
 <template>
     <div class="rules">
-        <div class="flex column items-center">
-            <img src="../../assets/18plus.svg" width="40px" height="40px">
-            <p class="text-center">
-                Не допускаются лица
-                <br> моложе <a class="text-red-12">18 лет</a>
-            </p>
-        </div>
-        <div class="flex column items-center">
-            <img src="../../assets/shirt.svg" width="40px" height="40px">
-            <p class="text-center">
-                Gorgona Lounge<br>
-                <a class="text-red-12">не несет ответственность</a><br>
-                за личные вещи гостей
-            </p>
+        <div class="flex row justify-center">
+            <div class="flex column items-center">
+                <img src="../../assets/18plus.svg" width="40px" height="40px">
+                <p class="text-center">
+                    Не допускаются <br> лица 
+                     моложе <a class="text-red-12"><br>18 лет</a>
+                </p>
+            </div>
+            <div class="flex column items-center">
+                <img src="../../assets/shirt.svg" width="40px" height="40px">
+                <p class="text-center">
+                    Gorgona Lounge<br>
+                    <a class="text-red-12">не несет<br> ответственность</a><br>
+                    за личные вещи гостей
+                </p>
+            </div>
         </div>
         <div class="flex justify-center">
             <div class="bordered q-mx-lg">
@@ -27,13 +29,6 @@
                 </ul>
             </div>
         </div>
-        <div class="q-my-md q-mx-md">
-            <p class="text-center"><a class="text-red-12">При порче имущества</a> заведения гость оплачивает стоимость
-                имущества согласно конфликт-меню</p>
-            <p class="text-center"><a class="text-red-12">Заведение не несет никакой ответственности </a> за
-                повреждения,
-                травмы, ущерб, смертельные или другие случаи возникшие во время посещения заведения</p>
-        </div>
         <div class="flex justify-center">
             <div class="bordered q-mx-lg">
                 <div class="flex column items-center">
@@ -45,13 +40,13 @@
             </div>
         </div>
 
+        <div class="q-mt-md"></div>
         <div class="text-center q-gutter-sm q-my-lg rules-smoke">
-            <h5 class="q-mb-lg">Правила курения</h5>
-            <div v-for="(rule, index) in rules" :key="index" class="row">
+            <div v-for="(rule, index) in rules" :key="index" class="row items-center">
                 <div class="bordered-white">
                     {{ rule.people }}<br>PEOPLE
                 </div>
-                <img v-for="i in rule.hookahs" :key="i" src="../../assets/hookan.svg" width="50px" height="50px">
+                <img v-for="i in rule.hookahs" :key="i" src="../../assets/hookan.svg" width="40px" height="40px">
             </div>
         </div>
     </div>

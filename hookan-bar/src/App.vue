@@ -17,26 +17,24 @@ import Contacts from './components/UI/Contacts.vue';
 
 <style lang="scss">
   @font-face {
-    font-family: 'TrebuchetMS';
-    src: url('./fonts/TrebuchetMS.ttf') format('truetype');
-  }
-  @font-face {
-    font-family: 'Impact';
-    src: url('./fonts/Impact.ttf') format('truetype');
+    font-family: 'Stetica';
+    src: url('./fonts/AA Stetica.ttf') format('truetype');
   }
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Trebuchet MS', Helvetica, sans-serif;
-  font-weight: 400;
+  font-family: 'Stetica', sans-serif;
+  font-weight: 500 !important;
+  letter-spacing: 0.05rem !important;
 }
 
 .app {
   min-height: 100vh;
   position: relative;
-  background-image: url("./assets/background.jpg");
+  // background-image: url("./assets/background.jpg");
+  background-color: #000000;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
