@@ -16,7 +16,7 @@
                 </div>
                 <div class="col items-center q-mt-sm q-gutter-sm">
                     <!-- telegram -->
-                    <a href="https://vk.com/gorgonairkutsk">
+                    <a href="https://t.me/gorgona_irk">
                         <q-btn round>
                             <svg width="25" height="25" viewBox="0 -3 25 25" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -27,7 +27,7 @@
                         </q-btn>
                     </a>
                     <!-- whatsapp -->
-                    <a href="https://wa.me/89016662190">
+                    <a href="https://wa.me/+79016662190">
                         <q-btn round>
                             <svg width="25" height="25" viewBox="0 0 20 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">

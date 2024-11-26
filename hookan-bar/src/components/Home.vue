@@ -79,7 +79,7 @@ const scrollToMenu = (menunId?: string) => {
   if (menunId) {
     const element = document.getElementById(menunId);
     if (element) {
-      const yOffset = -160;
+      const yOffset = -30;
       const y = element.getBoundingClientRect().top + window.scrollY + yOffset;
       window.scrollTo({ top: y, behavior: 'smooth' });
     } else {

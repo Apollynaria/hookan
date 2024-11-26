@@ -1,12 +1,12 @@
 <template>
     <header style="border-bottom: 1px solid #5c005c">
         <nav :class="{ 'justify-center': mobile }">
-            <div class="branding">
-                 GORGONA LOUNGE
+            <div class="branding" :class="{ 'ml-20': !mobile }">
+                GORGONA LOUNGE
             </div>
             <ul v-show="!mobile" class="navigation">
                 <template v-for="item in navigationMenuList">
-                    <li style="margin-left: 2px !important;"><router-link class="link" :to="item.link">{{ item.text }}</router-link></li>
+                    <li style="margin-left: 2px !important; "><router-link class="link" :to="item.link">{{ item.text }}</router-link></li>
                 </template>
             </ul>
             <div class="icon">
@@ -34,7 +34,7 @@
                     <div class="q-ma-md">
                         <hr class="hr-separator">
                     </div>
-                    <div class="q-gutter-md q-mt-md" style="padding-left: 16px;">
+                    <div class="q-gutter-md q-mt-sm" style="padding-left: 16px;">
                         <router-link class="link" to="/">Главная</router-link>
                         <router-link class="link" to="/interior">Интерьер</router-link>
                         <router-link class="link" to="/contacts">Контакты</router-link><br>
@@ -48,7 +48,7 @@
     </header>
     <header style="background-color: rgba(0, 0, 0, 0); z-index: 5; margin-top: 50px;">
         <nav v-show="mobile" class="nav-mini-mobile">
-            <ul class="navigation">
+            <ul class="navigation li-style">
                 <li>
                     <div @click="navigateToMenu('hookan')">Кальян</div>
                 </li>
@@ -61,7 +61,7 @@
             </ul>
         </nav>
     </header>
-    <div v-if="!mobile" style="height: 80px;"></div>
+    <div v-if="!mobile" style="height: 50px;"></div>
     <div v-if="mobile" style="height: 100px;"></div>
 </template>
 
@@ -158,6 +158,15 @@ checkScreen();
 </script>
 
 <style lang="scss" scoped>
+.li-style {
+    li {
+        padding: 0 !important; 
+        margin-left: 16px !important;
+    }
+}
+.ml-20 {
+  margin-left: 40px;
+}
 .q-icon {
     &:hover {
         color: #f7a806;
