@@ -53,10 +53,10 @@
                     <div @click="navigateToMenu('hookan')">Кальян</div>
                 </li>
                 <li>
-                    <div @click="navigateToMenu('tea')">Чайные церемонии</div>
+                    <div @click="navigateToMenu('tea_ceremonies')">Чайные церемонии</div>
                 </li>
                 <li>
-                    <div @click="navigateToMenu('bar')">Коктейли</div>
+                    <div @click="navigateToMenu('coctails')">Коктейли</div>
                 </li>
             </ul>
         </nav>
