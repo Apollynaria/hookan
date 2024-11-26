@@ -44,10 +44,10 @@
       <HeaderText title="КОКТЕЙЛИ" />
     </div>
     <div id="designer_lemonades">
-      <HeaderText title="АВТОРСКИЕ ЛИМОНАДЫ" />
+      <Limonades />
     </div>
     <div id="tea">
-      <HeaderText title="АВТОРСКИЙ ЧАЙ" />
+      <Tea />
     </div>
     <div id="tea_ceremonies">
       <HeaderText title="ЧАЙНЫЕ ЦЕРЕМОНИИ" />
@@ -64,9 +64,9 @@ import { ref, computed, onMounted, onUnmounted, watch } from 'vue';
 import { QCarousel, QCarouselSlide, QImg } from 'quasar';
 import image from '@/assets/home.jpg';
 import HeaderText from './UI/HeaderText.vue';
-import LoyaltyProgram from './UI/LoyaltyProgram.vue';
-import Rules from './UI/Rules.vue';
 import { useRoute } from 'vue-router';
+import Limonades from './UI/Lemonades.vue';
+import Tea from './UI/Tea.vue';
 
 const slide = ref(1);
 const imageWidth = ref(0);
