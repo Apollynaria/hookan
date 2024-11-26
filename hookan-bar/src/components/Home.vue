@@ -1,6 +1,6 @@
 <template>
   <div>
-    <q-carousel animated v-model="slide" infinite height="calc(100vh - 160px)">
+    <q-carousel animated v-model="slide" infinite height="calc(100vh - 100px)">
       <q-carousel-slide :name="1" :img-src="imagUrl">
         <div class="absolute-full flex flex-center items-center bg-color">
           <Transition name="fade-in">
