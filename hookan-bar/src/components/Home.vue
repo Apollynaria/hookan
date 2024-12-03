@@ -41,7 +41,7 @@
       <HeaderText title="БАР" />
     </div>
     <div id="coctails">
-      <HeaderText title="КОКТЕЙЛИ" />
+      <Coctails />
     </div>
     <div id="designer_lemonades">
       <Limonades />
@@ -67,6 +67,7 @@ import HeaderText from './UI/HeaderText.vue';
 import { useRoute } from 'vue-router';
 import Limonades from './UI/Lemonades.vue';
 import Tea from './UI/Tea.vue';
+import Coctails from './UI/Coctails.vue';
 
 const slide = ref(1);
 const imageWidth = ref(0);
