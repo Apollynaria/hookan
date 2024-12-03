@@ -16,47 +16,45 @@
       </q-carousel-slide>
     </q-carousel>
   </div>
-  <div>
-    <div id="hookan">
-      <HeaderText title="КАЛЬЯНЫ" />
-      <div class="text-center text-white  q-mb-lg">
-        <q-img class="q-mt-lg" src="https://img.freepik.com/premium-photo/hookah-with-fume-dark_392895-21378.jpg"
-          style="height: 300px; width: 278px;"></q-img>
-        <div class="title text-h5 q-mt-lg">
-          НАЗВАНИЕ
-        </div>
-        <div class="description q-mx-lg q-mt-sm">
-          По мотивам всемирно известного коктейля Cosmopolitan, мы создали новую версию этого напитка с добавлением
-          грантового сока, которая подчеркнет все вкусовые тонкости.
-        </div>
-        <div class="price text-h5 q-mt-md">
-          2200 ₽
+  <div class="flex justify-center">
+    <div class="main-div">
+      <div id="hookan">
+        <HeaderText title="КАЛЬЯНЫ" />
+        <div class="text-center text-white  q-mb-lg">
+          <q-img class="q-mt-lg" src="https://img.freepik.com/premium-photo/hookah-with-fume-dark_392895-21378.jpg"
+            style="height: 300px; width: 278px;"></q-img>
+          <div class="title text-h5 q-mt-lg">
+            НАЗВАНИЕ
+          </div>
+          <div class="description q-mx-lg q-mt-sm">
+            По мотивам всемирно известного коктейля Cosmopolitan, мы создали новую версию этого напитка с добавлением
+            грантового сока, которая подчеркнет все вкусовые тонкости.
+          </div>
+          <div class="price text-h5 q-mt-md">
+            2200 ₽
+          </div>
         </div>
       </div>
-    </div>
-    <div id="promo">
-      <HeaderText title="АКЦИИ" color_text="red-12" />
-    </div>
-    <div id="bar">
-      <HeaderText title="БАР" />
-    </div>
-    <div id="coctails">
-      <Coctails />
-    </div>
-    <div id="designer_lemonades">
-      <Limonades />
-    </div>
-    <div id="tea">
-      <Tea />
-    </div>
-    <div id="tea_ceremonies">
-      <HeaderText title="ЧАЙНЫЕ ЦЕРЕМОНИИ" />
-    </div>
-    <div id="snacks">
-      <HeaderText title="ЗАКУСКИ" />
+      <div id="promo">
+        <HeaderText title="АКЦИИ" color_text="red-12" />
+      </div>
+      <div id="bar">
+        <HeaderText title="БАР" />
+      </div>
+      <div id="coctails">
+        <Coctails />
+      </div>
+      <div id="designer_lemonades">
+        <Limonades />
+      </div>
+      <div id="tea">
+        <Tea />
+      </div>
+      <div id="tea_ceremonies">
+        <HeaderText title="ЧАЙНЫЕ ЦЕРЕМОНИИ" />
+      </div>
     </div>
   </div>
-  
 </template>
 
 <script setup lang="ts">
@@ -115,6 +113,10 @@ watch(() => route.query.menu, (newMenu) => {
 </script>
 
 <style lang="scss" scoped>
+.main-div {
+  max-width: 500px;
+}
+
 .full-screen-image {
   width: 100%;
   height: 100vh;

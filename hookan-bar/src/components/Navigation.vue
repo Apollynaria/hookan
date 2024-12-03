@@ -122,10 +122,6 @@ const menuList = [
         id: 'tea_ceremonies',
         text: 'Чайные церемонии',
     },
-    {
-        id: 'snacks',
-        text: 'Закуски',
-    },
 ]
 const navigateToMenu = (menu: string) => {
     router.push({ name: 'Home', query: { menu } });
