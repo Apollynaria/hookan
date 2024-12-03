@@ -112,7 +112,7 @@ const coctails_list = [
 <style lang="scss" scoped>
 .coctails-back {
     background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../../assets/coctails_back.jpg");
-    background-size: contain;
+    background-size: auto;
     background-position: center;
     background-attachment: fixed;
     background-blend-mode: multiply;
