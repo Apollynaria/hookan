@@ -1,22 +1,24 @@
 <template>
     <div>
         <HeaderText title="АВТОРСКИЕ ЛИМОНАДЫ" />
-        <template v-for="(item, ind) in lemonades_list">
-            <div class="q-mx-lg" :class="[ind !== 0 ? 'q-mt-lg' : '']">
-                <div class="flex row gap-2">
-                    <div class="title">
-                        {{ item.name }}
+        <div class="lemonades-back">
+            <template v-for="(item, ind) in lemonades_list">
+                <div class="q-mx-lg" :class="[ind !== 0 ? 'q-mt-lg' : '']">
+                    <div class="flex row gap-2">
+                        <div class="title">
+                            {{ item.name }}
+                        </div>
+                        <div class="center-div" />
+                        <div class="price">
+                            {{ item.price }}
+                        </div>
                     </div>
-                    <div class="center-div" />
-                    <div class="price">
-                        {{ item.price }}
+                    <div class="description">
+                        {{ item.description }}
                     </div>
                 </div>
-                <div class="description">
-                    {{ item.description }}
-                </div>
-            </div>
-        </template>
+            </template>
+        </div>
     </div>
 </template>
 
@@ -53,15 +55,25 @@ const lemonades_list = [
 </script>
 
 <style lang="scss" scoped>
+.lemonades-back {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../../assets/lemonades_back.jpg");
+    background-size: auto;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+}
+
 * {
     color: #ffffff;
 }
+
 .center-div {
-    flex: 1; 
-    border-bottom: 3px dotted; 
-    border-width: 2px; 
+    flex: 1;
+    border-bottom: 3px dotted;
+    border-width: 2px;
     margin: 0px 4px 7px 4px;
 }
+
 .title {
     font-size: 18px;
     text-transform: uppercase;

@@ -19,21 +19,7 @@
   <div class="flex justify-center">
     <div class="main-div">
       <div id="hookan">
-        <HeaderText title="КАЛЬЯНЫ" />
-        <div class="text-center text-white  q-mb-lg">
-          <q-img class="q-mt-lg" src="https://img.freepik.com/premium-photo/hookah-with-fume-dark_392895-21378.jpg"
-            style="height: 300px; width: 278px;"></q-img>
-          <div class="title text-h5 q-mt-lg">
-            НАЗВАНИЕ
-          </div>
-          <div class="description q-mx-lg q-mt-sm">
-            По мотивам всемирно известного коктейля Cosmopolitan, мы создали новую версию этого напитка с добавлением
-            грантового сока, которая подчеркнет все вкусовые тонкости.
-          </div>
-          <div class="price text-h5 q-mt-md">
-            2200 ₽
-          </div>
-        </div>
+        <Hookan />
       </div>
       <div id="promo">
         <HeaderText title="АКЦИИ" color_text="red-12" />
@@ -66,6 +52,7 @@ import { useRoute } from 'vue-router';
 import Limonades from './UI/Lemonades.vue';
 import Tea from './UI/Tea.vue';
 import Coctails from './UI/Coctails.vue';
+import Hookan from './UI/Hookan.vue';
 
 const slide = ref(1);
 const imageWidth = ref(0);

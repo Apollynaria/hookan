@@ -29,7 +29,7 @@
                 </ul>
             </div>
         </div>
-        <div class="flex justify-center">
+        <div class="flex justify-center q-mt-sm">
             <div class="bordered q-mx-lg">
                 <div class="flex column items-center">
                     <img src="../../assets/mark.svg" class="q-mt-sm" width="40px" height="40px">
