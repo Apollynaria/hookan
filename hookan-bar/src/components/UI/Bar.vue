@@ -13,7 +13,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-1" style="width: 20px;"></div>
+            <div class="col-1" style="width: 10px;"></div>
             <div class="col">
                 <div v-for="(category, categoryName) in bar_list_right" :key="categoryName">
                     <div class="category">{{ categoryName }}</div>
