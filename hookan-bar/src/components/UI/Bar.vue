@@ -171,7 +171,7 @@ const bar_list_right = {
 
 <style lang="scss" scoped>
 .tea-back {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../../assets/bar_back.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("../../assets/bar_back.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
