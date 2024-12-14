@@ -21,11 +21,11 @@
       <div id="hookan">
         <Hookan />
       </div>
-      <div id="promo">
+      <!-- <div id="promo">
         <HeaderText title="АКЦИИ" color_text="red-12" />
-      </div>
+      </div> -->
       <div id="bar">
-        <HeaderText title="БАР" />
+        <Bar />
       </div>
       <div id="coctails">
         <Coctails />
@@ -37,7 +37,7 @@
         <Tea />
       </div>
       <div id="tea_ceremonies">
-        <HeaderText title="ЧАЙНЫЕ ЦЕРЕМОНИИ" />
+        <TeaCeremonies />
       </div>
     </div>
   </div>
@@ -53,6 +53,8 @@ import Limonades from './UI/Lemonades.vue';
 import Tea from './UI/Tea.vue';
 import Coctails from './UI/Coctails.vue';
 import Hookan from './UI/Hookan.vue';
+import TeaCeremonies from './UI/TeaCeremonies.vue';
+import Bar from './UI/Bar.vue';
 
 const slide = ref(1);
 const imageWidth = ref(0);

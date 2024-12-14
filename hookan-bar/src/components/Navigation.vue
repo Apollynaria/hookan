@@ -98,10 +98,10 @@ const menuList = [
         id: 'hookan',
         text: 'Кальяны',
     },
-    {
-        id: 'promo',
-        text: 'Акции',
-    },
+    // {
+    //     id: 'promo',
+    //     text: 'Акции',
+    // },
     {
         id: 'bar',
         text: 'Бар',

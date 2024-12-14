@@ -4,7 +4,7 @@
             <div class="text-center">
                 <div>
                     <br>
-                    г. Иркутск, Красноярская ул., 33
+                    г. Иркутск, Красноярская ул., 33, <br> Цокольный этаж
                 </div>
                 <div class="q-mt-sm">
                     <a href="tel:+79016662190">
@@ -49,7 +49,8 @@
                         </q-btn>
                     </a>
                 </div>
-                <div class="q-mt-md" style="position:relative;overflow:hidden;">
+                <div style="height: 10px;" />
+                <!-- <div class="q-mt-md" style="position:relative;overflow:hidden;">
                     <a href="https://yandex.ru/maps/org/gorgona_laundzh/12782634038/?utm_medium=mapframe&utm_source=maps"
                         style="color:#eee;font-size:12px;position:absolute;top:0px;">Горгона Лаундж</a><a
                         href="https://yandex.ru/maps/63/irkutsk/category/hookah_lounge/34866769160/?utm_medium=mapframe&utm_source=maps"
@@ -59,7 +60,7 @@
                         src="https://yandex.ru/map-widget/v1/?ll=104.329889%2C52.279209&mode=search&oid=12782634038&ol=biz&z=13.95"
                         width="100%" height="250" frameborder="1" allowfullscreen="true"
                         style="position:relative;"></iframe>
-                </div>
+                </div> -->
             </div>
 
         </div>
