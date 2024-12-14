@@ -57,10 +57,9 @@ const lemonades_list = [
 <style lang="scss" scoped>
 .lemonades-back {
     background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../../assets/lemonades_back.jpg");
-    background-size: auto;
+    background-size: cover;
     background-position: center;
-    background-attachment: fixed;
-    background-blend-mode: multiply;
+    background-repeat: no-repeat;
 }
 
 * {
