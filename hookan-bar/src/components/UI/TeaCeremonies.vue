@@ -76,7 +76,7 @@ const tea_ceremonies_list = [
 
 <style lang="scss" scoped>
 .tea-back {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("../../assets/ceremonies_back.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../assets/ceremonies_back.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
