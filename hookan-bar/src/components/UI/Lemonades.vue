@@ -24,34 +24,8 @@
 
 <script setup lang="ts">
 import HeaderText from './HeaderText.vue';
+import { lemonades_list } from '../../text/text';
 
-const lemonades_list = [
-    {
-        name: 'Киви – фейхоа',
-        description: 'Пюре киви, сироп кокос, лимонный сок, содовая',
-        price: '500₽',
-    },
-    {
-        name: 'Арбуз – ананас',
-        description: 'Пюре арбуз, ананасовый сок, лимонный сок, содовая',
-        price: '500₽',
-    },
-    {
-        name: 'Груша – миндаль',
-        description: 'Пюре груша, сироп миндаль, лимонный сок, содовая',
-        price: '500₽',
-    },
-    {
-        name: 'Малина – Мята',
-        description: 'Пюре малина, сироп мята, лимонный сок, содовая',
-        price: '500₽',
-    },
-    {
-        name: 'Вишня – Юдзу',
-        description: 'Пюре вишня, вишневый сок, лимонный сок, cироп блю кюрасао, содовая',
-        price: '500₽',
-    },
-]
 </script>
 
 <style lang="scss" scoped>

@@ -24,54 +24,8 @@
 
 <script setup lang="ts">
 import HeaderText from './HeaderText.vue';
+import { tea_ceremonies_list } from '../../text/text';
 
-const tea_ceremonies_list = [
-    {
-        name: 'Бин Те Гуань Инь Мао Ча',
-        description: '',
-        price: '600₽',
-    },
-    {
-        name: 'Фэн Хуан Дань Цун',
-        description: '',
-        price: '600₽',
-    },
-    {
-        name: 'Габа Алишань',
-        description: '',
-        price: '700₽',
-    },
-    {
-        name: 'Уи Ци Лань',
-        description: '',
-        price: '700₽',
-    },
-    {
-        name: 'Сычуань Мао Фэн',
-        description: '',
-        price: '550₽',
-    },
-    {
-        name: 'Да Хун Пао Чжень Янь',
-        description: '',
-        price: '650₽',
-    },
-    {
-        name: 'Цзинь Хао Дянь Хун',
-        description: '',
-        price: '500₽',
-    },
-    {
-        name: 'Шен Пуэр Фаб',
-        description: '',
-        price: '650₽',
-    },
-    {
-        name: 'Шу Пуэр Байдао У Чжай',
-        description: '',
-        price: '650₽',
-    },
-]
 </script>
 
 <style lang="scss" scoped>

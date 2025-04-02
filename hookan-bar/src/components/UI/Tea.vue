@@ -24,34 +24,8 @@
 
 <script setup lang="ts">
 import HeaderText from './HeaderText.vue';
+import { tea_list } from '../../text/text';
 
-const tea_list = [
-    {
-        name: 'Время ежевики',
-        description: 'Чай время ежевики, пюре малина, сироп лаванда, лимонный сок',
-        price: '500₽',
-    },
-    {
-        name: 'Вишневый',
-        description: 'Чай ассам, пюре вишня, сироп можжевельник, лимонный сок',
-        price: '500₽',
-    },
-    {
-        name: 'Сибирский',
-        description: 'Чай чабрец, пюре чебрец смородина , сироп альпийские травы, мед',
-        price: '500₽',
-    },
-    {
-        name: 'Облепиховый',
-        description: 'Чай сенча, пюре облепиха, мед, лимонный сок',
-        price: '500₽',
-    },
-    {
-        name: 'Сладкая груша',
-        description: 'Чай жасминовый жемчуг ежевики, пюре груша, сироп карамель, лимонный сок',
-        price: '500₽',
-    },
-]
 </script>
 
 <style lang="scss" scoped>
