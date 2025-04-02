@@ -189,7 +189,7 @@ export const coctails_list = [
         price: '500₽',
     },
     {
-        name: 'Боги на вечеринке',
+        name: 'Боги на вечеddринке',
         description: 'Абсент, брют, берн, лимонный сок',
         price: '500₽',
     },

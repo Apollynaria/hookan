@@ -31,7 +31,7 @@
 
 <script setup lang="ts">
 import HeaderText from './HeaderText.vue';
-import { bar_list_left, bar_list_right } from '../../text/text';
+import { bar_list_left, bar_list_right } from '../../../text/text';
 
 </script>
 

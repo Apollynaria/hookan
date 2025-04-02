@@ -24,7 +24,7 @@
 
 <script setup lang="ts">
 import HeaderText from './HeaderText.vue';
-import { tea_ceremonies_list } from '../../text/text';
+import { tea_ceremonies_list } from '../../../text/text';
 
 </script>
 

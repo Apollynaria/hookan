@@ -24,7 +24,7 @@
 
 <script setup lang="ts">
 import HeaderText from './HeaderText.vue';
-import { coctails_list } from '../../text/text';
+import { coctails_list } from '../../../text/text';
 
 </script>
 

@@ -24,7 +24,7 @@
 
 <script setup lang="ts">
 import HeaderText from './HeaderText.vue';
-import { lemonades_list } from '../../text/text';
+import { lemonades_list } from '../../../text/text';
 
 </script>
 

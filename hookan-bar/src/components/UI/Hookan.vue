@@ -25,7 +25,7 @@ import image1 from '@/assets/hookan1.jpg';
 import image2 from '@/assets/hookan2.jpg';
 import { computed } from 'vue'
 
-import { hookan_list_text } from '../../text/text';
+import { hookan_list_text } from '../../../text/text';
 
 const hookan_list = computed(() => {
     const firstTwoItems = hookan_list_text.slice(0, 2).map((item, index) => (
